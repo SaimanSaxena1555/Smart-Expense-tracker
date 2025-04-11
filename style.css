@@ -1,0 +1,173 @@
+/* General Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('./assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0A0F1C;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    transition: all 1s ease;
+}
+
+/* Title and SignUp Button Alignment */
+#LoginPageTitle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #00C2FF;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    z-index: 10;
+}
+
+#SignUp {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid #00C2FF;
+    color: #00C2FF;
+    font-size: 16px;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    z-index: 10;
+}
+
+#SignUp:hover {
+    background-color: #00C2FF;
+    color: #fff;
+}
+
+#SignUp:active {
+    background-color: #3e8e41;
+    transform: translateY(4px);
+}
+
+/* Login Form Container */
+#LoginForm {
+    background-color: rgba(33, 33, 33, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 0 15px rgba(0, 194, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Heading */
+.LoginPageHeading {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Label Styling */
+#LoginForm label {
+    display: block;
+    color: white;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* Input Fields */
+#LoginForm input[type="email"],
+#LoginForm input[type="password"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    box-sizing: border-box;
+    transition: border 0.3s ease, background-color 0.3s ease;
+    font-size: 14px;
+}
+
+/* Placeholder Styling */
+#LoginForm input::placeholder {
+    color: #bbb;
+    font-style: italic;
+}
+
+/* Input Focus */
+#LoginForm input:focus {
+    outline: none;
+    border: 2px solid #00C2FF;
+    background-color: #2a2a2a;
+    box-shadow: 0 0 6px rgba(0, 194, 255, 0.5);
+}
+
+/* Login Button */
+.LoginButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #00C2FF;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.LoginButton:hover {
+    background-color: #00A5D1;
+    font-size: 17px;
+    transform: scale(1.05);
+}
+
+/* Forgot Password Link */
+.ForgotPassword {
+    color: #999;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.ForgotPassword:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    #LoginForm {
+        width: 90%;
+    }
+
+    #SignUp {
+        top: 10px;
+        right: 10px;
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    #LoginPageTitle {
+        top: 10px;
+        left: 10px;
+        font-size: 28px;
+    }
+}
+
+

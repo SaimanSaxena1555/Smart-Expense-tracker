@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Smart Expense Tracker</title>
+</head>
+<body>
+    <a href="SignUp.html">
+        <button class="SignUp" id="SignUp">
+            <span>Sign Up »</span>
+        </button>
+    </a>
+
+    <h1 id="LoginPageTitle" class="LoginPageTitle">Smart Expense Tracker</h1>
+
+    <div id="LoginForm" class="LoginForm">
+        <h1 id="LoginPageHeading" class="LoginPageHeading">Welcome Back</h1>
+
+        <label for="LoginEmailInput">Email</label>
+        <input 
+            type="email" 
+            placeholder="📧 Email" 
+            class="LoginEmailInput" 
+            id="LoginEmailInput" 
+            required
+        >
+
+        <label for="LoginPassword">Password</label>
+        <input 
+            type="password" 
+            placeholder="🔒 Password" 
+            class="LoginPassword" 
+            id="LoginPassword" 
+            required
+        >
+
+        <button id="LoginButton" class="LoginButton">Login</button>
+        <a class="ForgotPassword" id="ForgotPassword">Forgot Password?</a>
+    </div>
+</body>
+<script src="js/script.js"></script>
+</html>
